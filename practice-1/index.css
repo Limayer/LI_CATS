@@ -1,0 +1,28 @@
+.form-block {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-item {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-item > input[type="text"],
+.form-item > input[type="email"],
+.form-item > button,
+.form-item > select,
+.form-item > textarea{
+    max-width: 250px;
+}
+
+.form-radio {
+    display: flex;
+    flex-direction: row;
+}
+
+.form-checkbox {
+    display: flex;
+    flex-direction: row;
+}

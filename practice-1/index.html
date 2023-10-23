@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Курытник</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+    <form action="#" class="form-block">
+        <div class="form-item">
+            <h2 class="form-title">
+                Сбор данных
+            </h2>
+        </div>
+
+        <div class="form-item">
+            <label for="name-id">Имя</label>
+            <input class="form-item-input" id="name-id" type="text" name="name" placeholder="Иван">
+        </div>
+
+        <div class="form-item">
+            <label for="forname-id">Фамилия</label>
+            <input class="form-item-input" id="forname-id" type="text" name="forname" placeholder="Иванов">
+        </div>
+
+        <div class="form-item">
+            <label for="email-id">Почта</label>
+            <input class="form-item-input" id="email-id" type="email" name="email" placeholder="E-Mail">
+        </div>
+
+        <div class="form-item">
+            <select class="form-item-select" name="country" id="country-id">
+                <option class="form-item-select-option" value="none" selected>Выберите страну</option>
+                <option class="form-item-select-option" value="ru">Россия</option>
+                <option class="form-item-select-option" value="be">Беларусь</option>
+                <option class="form-item-select-option" value="kz">Казахстан</option>
+                <option class="form-item-select-option" value="la">Латвия</option>
+            </select>
+        </div>
+
+        <div class="form-item">
+            <label for="about-id">Обо мне</label>
+            <textarea class="form-item-textarea" name="about" id="about-id" cols="15" rows="3"></textarea>
+        </div>
+
+        <div class="form-item form-radio">
+            <label for="male-id">Мужской</label>
+            <input class="form-item-radio" type="radio" name="gender" id="male-id" value="male">
+
+            <label for="female-id">Женский</label>
+            <input class="form-item-radio" type="radio" name="gender" id="female-id" value="female">
+        </div>
+
+        <div class="form-item">
+            <label>Какие бренды вам предпочтительны?</label>
+            <div class="form-checkbox">
+                <label for="adidas-id">Adidas</label>
+                <input class="form-item-checkbox" type="checkbox" name="brand" value="adidas" id="adidas-id">
+                <label for="nike-id">Nike</label>
+                <input class="form-item-checkbox" type="checkbox" name="brand" value="nike" id="nike-id">
+                <label for="gucci-id">Gucci</label>
+                <input class="form-item-checkbox" type="checkbox" name="brand" value="gucci" id="gucci-id">
+            </div>
+        </div>
+
+        <div class="form-item">
+            <button class="form-item-btn" type="submit">Отправить</button>
+        </div>
+    </form>
+</body>
+</html>
