@@ -1,0 +1,150 @@
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    background: url("../img/connection.png") center no-repeat;
+    background-size: 100% auto;
+    width: 100%;
+    min-height: 1400px;
+    color: #BC1E21;
+}
+
+header>a {
+    color: #BC1E21;
+}
+
+.header-block {
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 40px;
+}
+
+
+.header-navbar {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    list-style: none;
+}
+
+
+.header-navbar-link {
+    font-size: 24px;
+    color: #BC1E21;
+    font-weight: lighter;
+}
+
+.icons {
+    display: flex;
+    gap: 20px;
+}
+
+.form {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+    margin-left: 300px;
+}
+
+form {
+    display: flex;
+    font-size: 64px;
+}
+
+fieldset {
+    padding: 25px;
+}
+
+fieldset>div>p {
+    font-size: 24px;
+    padding-left: 30px;
+    color: #8273af;
+}
+
+div>input {
+    padding: 7px;
+    width: 90%;
+    margin: 0 25px;
+    margin-bottom: 25px;
+    border-radius: 10px;
+    border: 1px solid #A199B7;
+}
+
+.name,
+.phone {
+    display: flex;
+    flex-direction: column;
+}
+
+menu>button {
+    padding: 10px 30px;
+    border-radius: 10px;
+    background-color: #A199B7;
+    border: 1px solid #A199B7;
+    color: #FFFFFF;
+    font-size: 20px;
+    display: flex;
+    margin: 10px 10%;
+}
+
+.modal-flex {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 20px;
+    border: none;
+}
+
+.modal-dialog{
+    padding: 50px 100px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    background-color: #a199b7;
+    color: #FFFFFF;
+}
+
+
+.modal-dialog > p{
+    font-size: 24px;
+}
+
+#button-close{
+    padding: 20px 150px;
+    border-radius: 15px;
+    border: none;
+    font-size: 20px;
+    margin-top: 40px;
+}
+
+footer {
+    color: #1E1E1E;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 15px;
+    margin-bottom: 90px;
+    margin-right: 50px;
+}
+
+footer>div {
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+}
+
+footer>p {
+    color: #1E1E1E;
+    font-size: 36px;
+    width: 50%;
+}

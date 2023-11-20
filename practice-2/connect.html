@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Кондитерская</title>
+    <link rel="stylesheet" href="./css/connect.css">
+</head>
+<body>
+    <header class="header-block">
+        <a href="./index.html">
+            <h1 class="name">Кондитерская Meier</h1>
+        </a>
+        <ul class="header-navbar">
+            <li class="header-navbar-item">
+                <a class="header-navbar-link" href="#">Каталог</a>
+            </li>
+
+            <li class="header-navbar-item">
+                <a class="header-navbar-link" href="#">Наша история</a>
+            </li>
+
+            <li class="header-navbar-item">
+                <a class="header-navbar-link" href="#">Отзывы</a>
+            </li>
+
+            <li class="header-navbar-item">
+                <a class="header-navbar-link" href="#">Обратная связь</a>
+            </li>
+        </ul>
+        <div class="icons">
+            <a href="#">
+                <img src="../practice-2/img/search.svg" alt="">
+            </a>
+            <a href="#">
+                <img src="../practice-2/img/local_mall.svg" alt="">
+            </a>
+        </div>
+    </header>
+
+    <main>
+        <div class="form">
+            <form action="">
+                <fieldset>
+                    <legend>Наша обратная связь</legend>
+                    <div class="name">
+                        <p>Укажите ваше имя</p>
+                        <input type="text" name="name">
+                    </div>
+                    <div class="phone">
+                        <p>Укажите номер телефона</p>
+                        <input type="phone" name="phone">
+                    </div>
+                </fieldset>
+            </form>
+            <menu class="button-flex">
+                <button id="button-open">Отправить</button>
+            </menu>
+        </div>
+        <dialog id="modal" class="modal-flex">
+            <div class="modal-dialog">
+                <h1>Дожидайтесь ответа оператора</h1>
+                <p>Это окно можно закрыть</p>
+                <button id="button-close">Закрыть</button>
+            </div>
+        </dialog>
+    </main>'
+
+    <footer>
+        <p>Мы выбрали говорить с миром одним из самых сладких способов</p>
+        <div class="phone">
+            <p>8-900-000-00-00</p>
+            <img src="../practice-2/img/call.svg" alt="">
+        </div>
+        <div class="e-mail">
+            <p>anzelikakurytnik@gmail.com</p>
+            <img src="../practice-2/img/mail.svg" alt="">
+        </div>
+    </footer>
+
+    <script>
+        (function () {
+          const openButton = document.getElementById("button-open");
+          const closeButton = document.getElementById("button-close");
+          const modalID = document.getElementById("modal");
+    
+          openButton.addEventListener("click", () => {
+            modalID.showModal();
+          });
+    
+          closeButton.addEventListener("click", () => {
+            modalID.close();
+          });
+        })();
+      </script>
+</body>
+</html>
